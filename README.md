@@ -1,0 +1,2 @@
+# PopOnSDK_IOS_ChatPalToAKit_Framework
+PopOn语伴服务，A端发单模块SDK资源以及集成文档
