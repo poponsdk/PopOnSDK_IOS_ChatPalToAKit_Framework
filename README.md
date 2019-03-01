@@ -8,6 +8,7 @@ PopOnChatPalToAKit 提供第三方接入用户进行PopOn语伴发单功能，�
 2. 联系客服获取对应的AppKey和platform
 
 ## 添加PopOnChatPalToAKit到项目中 - Cocoapods导入
+由于项目中依赖的第三方库比较多，暂时仅支持cocoapods导入
 1. Cocoapods安装： 参考[Cocoapods安装](https://guides.cocoapods.org/using/getting-started.html)
 2. 使用 CocoaPods 导入PopOnChatPalToAKit  
 
@@ -60,7 +61,7 @@ PopOnChatPalToAKit 提供第三方接入用户进行PopOn语伴发单功能，�
 # demo下载
 demo地址：[PopOnChatPalToKitDemo](http://121.196.211.217/wordoor_ios/PopOnSDK_ChatPalToAKit_framework/tree/master/PopOnChatPalToAKitDemo)
 
-- 执行demo前请先在终端执行
+ps:执行demo前请先在终端执行
 
         cd 项目目录
         pod install
