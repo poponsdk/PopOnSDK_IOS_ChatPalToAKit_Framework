@@ -1,0 +1,6 @@
+framework module PopOnChatPalToAKit {
+  umbrella header "PopOnChatPalToAKit.h"
+
+  export *
+  module * { export * }
+}
