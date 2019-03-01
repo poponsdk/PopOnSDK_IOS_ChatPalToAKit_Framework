@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "PopOnChatPalToAKit"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "PopOn 语伴服务 A端发单模块"
 
   # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ Pod::Spec.new do |spec|
                     PopOn 语伴服务 A端发单模块，提供第三方接入用户进行发语伴单与PopOn上各国语伴进行语音聊天服务
                    DESC
 
-  spec.homepage     = "http://121.196.211.217/wordoor_ios/PopOnSDK_ChatPalToAKit_framework.git"
+  spec.homepage     = "https://github.com/poponsdk/PopOnSDK_IOS_ChatPalToAKit_Framework.git"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -80,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://121.196.211.217/wordoor_ios/PopOnSDK_ChatPalToAKit_framework", :tag => "0.0.2" }
+  spec.source       = { :git => "https://github.com/poponsdk/PopOnSDK_IOS_ChatPalToAKit_Framework.git", :tag => "0.0.3" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

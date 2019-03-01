@@ -25,13 +25,13 @@
 
 - (void)clickAction:(id)sender {
     WDPopOnUserModel *userModel = [[WDPopOnUserModel alloc] init];
-    userModel.openId = @"1234";
-    userModel.nickName = @"测试";
-    userModel.mobile = @"13712345678";
-    userModel.avatar = @"avatar";
+    userModel.openId = @"userId";
+    userModel.nickName = @"userName";
+    userModel.mobile = @"your mobile";
+    userModel.avatar = @"your avatar";
     userModel.sex = WDSexCodeMale;
     
-    WDPopOnModel *model = [WDPopOnModel modelWithAppKey:@"Oi5CUFFTVUNCHkVaDl1dcUgDVlAB" platform:@"PrimeCloud" userInfo:userModel];
+    WDPopOnModel *model = [WDPopOnModel modelWithAppKey:@"your appkey" platform:@"your platform" userInfo:userModel];
     WDPopOnController *subVC = [WDPopOnController popOnControllerWithModel:model];
     [self presentViewController:subVC animated:YES completion:nil];
 }
