@@ -29,6 +29,8 @@ FOUNDATION_EXPORT WDLanguageLevelCode const WDLanguageLevelCodeBeginner;
 
 @property (nonatomic, copy) NSString *appKey;
 
+@property (nonatomic, copy) NSString *URLScheme;
+
 /*用户信息*/
 @property (nonatomic, strong) WDPopOnUserModel *userInfo;
 
@@ -37,7 +39,7 @@ FOUNDATION_EXPORT WDLanguageLevelCode const WDLanguageLevelCodeBeginner;
  *  platform 平台标识
  *  appKey app标识
  */
-+ (instancetype)modelWithAppKey:(NSString *)appKey platform:(NSString *)platform userInfo:(WDPopOnUserModel *)userInfo;
++ (instancetype)modelWithAppKey:(NSString *)appKey platform:(NSString *)platform urlScheme:(NSString *)urlScheme userInfo:(WDPopOnUserModel *)userInfo;
 
 @end
 
@@ -48,11 +50,12 @@ FOUNDATION_EXPORT WDLanguageLevelCode const WDLanguageLevelCodeBeginner;
 /*用户昵称*/
 @property (nonatomic, copy) NSString *nickName;
 /*手机号*/
-@property (nonatomic, copy, nullable) NSString *mobile;
+@property (nonatomic, copy) NSString *mobile;
 /*用户头像*/
-@property (nonatomic, copy, nullable) NSString *avatar;
+@property (nonatomic, copy) NSString *avatar;
 /*用户性别*/
-@property (nonatomic, copy, nullable) WDSexCode sex;
+@property (nonatomic, copy) WDSexCode sex;
+
 /*
  *  用户学习语
  *  仅支持中/英
