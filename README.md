@@ -59,7 +59,7 @@ PopOnChatPalToAKit 提供第三方接入用户进行PopOn语伴发单功能，�
 
 
 # demo下载
-demo地址：[PopOnChatPalToKitDemo](http://121.196.211.217/wordoor_ios/PopOnSDK_ChatPalToAKit_framework/tree/master/PopOnChatPalToAKitDemo)
+demo地址：[PopOnChatPalToKitDemo](https://github.com/poponsdk/PopOnSDK_IOS_ChatPalToAKit_Framework/tree/master/PopOnChatPalToAKitDemo)
 
 ps:执行demo前请先在终端执行
 
