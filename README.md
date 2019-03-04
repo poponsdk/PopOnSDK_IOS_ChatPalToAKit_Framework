@@ -21,6 +21,8 @@ PopOnChatPalToAKit 提供第三方接入用户进行PopOn语伴发单功能，�
 		    <key>NSAllowsArbitraryLoads</key>
 		    <true/>
 	    </dict>
+	    
+	![图一](https://github.com/poponsdk/PopOnSDK_IOS_ChatPalToAKit_Framework/blob/master/ReadmeResource/ATSSetting.png)
 
 4. 在项目的info.plist文件中添加隐私权限配置：
 
@@ -34,16 +36,30 @@ PopOnChatPalToAKit 提供第三方接入用户进行PopOn语伴发单功能，�
         <key>NSSpeechRecognitionUsageDescription</key>
         <string>如果不允许，您将无法通过语音识别进行AI翻译，AI翻译将更好的帮助您与朋友交流。</string>
     
-    
+    ![图二](https://github.com/poponsdk/PopOnSDK_IOS_ChatPalToAKit_Framework/blob/master/ReadmeResource/PrivacySetting.png)
+
 5. 设置项目的Background Modes:
 
     勾选 Audio,airPlay,and Picture in Picture.（如果没有勾选当App进入后台时语音服务将无法进行）设置
+    
+    ![图三](https://github.com/poponsdk/PopOnSDK_IOS_ChatPalToAKit_Framework/blob/master/ReadmeResource/BackModeSetting.png)
 
-6. 引入头文件 
+6. 在项目的info.plist文件设置白名单：（微信支付与支付宝支付时用到）
+
+		popon
+		weixin
+		wechat
+		alipay
+		alipayshare
+	
+	![图四](https://github.com/poponsdk/PopOnSDK_IOS_ChatPalToAKit_Framework/blob/master/ReadmeResource/SchemeSetting.png)
+
+
+7. 引入头文件 
 
         #import <PopOnChatPalToAKit/WDPopOnController.h>
 
-7. 调用Kit  
+8. 调用Kit  
 
 	    WDPopOnUserModel *userModel = [[WDPopOnUserModel alloc] init];
 	    userModel.openId = @"userId";
@@ -52,11 +68,11 @@ PopOnChatPalToAKit 提供第三方接入用户进行PopOn语伴发单功能，�
 	    userModel.avatar = @"user avatar";
 	    userModel.sex = WDSexCodeMale;
 	    userModel.learningLanguage = WDLanguageCodeEnglish;
-			    
-    	WDPopOnModel *model = [WDPopOnModel modelWithAppKey:@"your app key" platform:@"your platform" userInfo:userModel];
-	    WDPopOnController *subVC = [WDPopOnController popOnControllerWithModel:model];
-	    [self presentViewController:subVC animated:YES completion:nil];
-
+	    
+		WDPopOnModel *model = [WDPopOnModel modelWithAppKey:@"your app key" platform:@"your platform" urlScheme:@"your urlscheme" userInfo:userModel];
+    	WDPopOnController *subVC = [WDPopOnController popOnControllerWithModel:model];
+    	[self presentViewController:subVC animated:YES completion:nil];
+    
 
 # demo下载
 demo地址：[PopOnChatPalToKitDemo](https://github.com/poponsdk/PopOnSDK_IOS_ChatPalToAKit_Framework/tree/master/PopOnChatPalToAKitDemo)
