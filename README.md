@@ -54,12 +54,16 @@ PopOnChatPalToAKit 提供第三方接入用户进行PopOn语伴发单功能，�
 	
 	![图四](https://github.com/poponsdk/PopOnSDK_IOS_ChatPalToAKit_Framework/blob/master/ReadmeResource/SchemeSetting.png)
 
+7. 设置你的应用的UrlScheme
 
-7. 引入头文件 
+	![图五](https://github.com/poponsdk/PopOnSDK_IOS_ChatPalToAKit_Framework/blob/master/ReadmeResource/UrlSchemeSetting.png)
+
+
+8. 引入头文件 
 
         #import <PopOnChatPalToAKit/WDPopOnController.h>
 
-8. 调用Kit  
+9. 调用Kit  
 
 	    WDPopOnUserModel *userModel = [[WDPopOnUserModel alloc] init];
 	    userModel.openId = @"userId";
